@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './src/reducers';
 import * as firebase from 'firebase';
-import { addNavigationHelpers } from 'react-navigation';
 
 const store = createStore(reducers);
 
