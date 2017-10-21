@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './src/reducers';
 import * as firebase from 'firebase';
+import MainTabs from './src/navs/MainTabs';
 
 const store = createStore(reducers);
 
@@ -29,9 +30,7 @@ export default class App extends Component<{}> {
   render() {
     return (
       <Provider store={store}>
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <Text style={{ fontSize: 30 }}>PLNR</Text>
-        </View>
+        <MainTabs />
       </Provider>
     );
   }
